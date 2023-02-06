@@ -24,7 +24,7 @@ final class CoreDataTests: XCTestCase {
         coreDataStack = nil
     }
     
-    func test_FavoritesShowldBeEmpty() throws {
+    func test_FavoritesShouldBeEmpty() throws {
         let favoritesList = favoritesManager.getAllFavorites()
         XCTAssertTrue(favoritesList.isEmpty)
     }
