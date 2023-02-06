@@ -15,6 +15,10 @@
 		4F9A38A92990BACC00735159 /* KubikChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38A82990BACC00735159 /* KubikChallengeTests.swift */; };
 		4F9A38C42990BBBE00735159 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38C32990BBBE00735159 /* RestaurantModel.swift */; };
 		4F9A38C92990BC1300735159 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38C82990BC1300735159 /* HomeViewController.swift */; };
+		4F9A38CE2990BD1400735159 /* RestaurantList.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9A38CD2990BD1400735159 /* RestaurantList.json */; };
+		4F9A38D02990BD3300735159 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38CF2990BD3300735159 /* Service.swift */; };
+		4F9A38D22990BD4900735159 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D12990BD4900735159 /* NetworkError.swift */; };
+		4F9A38D42990BD6A00735159 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D32990BD6A00735159 /* RequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		4F9A38A82990BACC00735159 /* KubikChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikChallengeTests.swift; sourceTree = "<group>"; };
 		4F9A38C32990BBBE00735159 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
 		4F9A38C82990BC1300735159 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4F9A38CD2990BD1400735159 /* RestaurantList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RestaurantList.json; sourceTree = "<group>"; };
+		4F9A38CF2990BD3300735159 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		4F9A38D12990BD4900735159 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4F9A38D32990BD6A00735159 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 		4F9A388D2990BACB00735159 /* KubikChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				4F9A38CB2990BCF300735159 /* Utils */,
+				4F9A38CA2990BCE900735159 /* Network */,
 				4F9A38C22990BBA900735159 /* Models */,
 				4F9A38C12990BB8B00735159 /* Home */,
 				4F9A388E2990BACB00735159 /* AppDelegate.swift */,
@@ -138,6 +148,32 @@
 			children = (
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F9A38CA2990BCE900735159 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A38CF2990BD3300735159 /* Service.swift */,
+				4F9A38D12990BD4900735159 /* NetworkError.swift */,
+				4F9A38D32990BD6A00735159 /* RequestModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4F9A38CB2990BCF300735159 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A38CC2990BCF900735159 /* Mocks */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F9A38CC2990BCF900735159 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A38CD2990BD1400735159 /* RestaurantList.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9A38CE2990BD1400735159 /* RestaurantList.json in Resources */,
 				4F9A389E2990BACC00735159 /* LaunchScreen.storyboard in Resources */,
 				4F9A389B2990BACC00735159 /* Assets.xcassets in Resources */,
 			);
@@ -241,10 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F9A38C92990BC1300735159 /* HomeViewController.swift in Sources */,
+				4F9A38D22990BD4900735159 /* NetworkError.swift in Sources */,
 				4F9A38992990BACB00735159 /* KubikChallenge.xcdatamodeld in Sources */,
 				4F9A388F2990BACB00735159 /* AppDelegate.swift in Sources */,
 				4F9A38C42990BBBE00735159 /* RestaurantModel.swift in Sources */,
 				4F9A38912990BACB00735159 /* SceneDelegate.swift in Sources */,
+				4F9A38D02990BD3300735159 /* Service.swift in Sources */,
+				4F9A38D42990BD6A00735159 /* RequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
