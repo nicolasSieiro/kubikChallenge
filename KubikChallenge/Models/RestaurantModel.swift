@@ -17,7 +17,7 @@ struct Item: Codable {
     let currenciesAccepted: String
     let address: Address
     let aggregateRatings: AggregateRatings
-    let mainPhoto: MainPhoto
+    let mainPhoto: MainPhoto?
     let bestOffer: BestOffer
 }
 

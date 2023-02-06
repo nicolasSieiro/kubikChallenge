@@ -11,7 +11,7 @@ struct RequestModel {
     let endpoint: Endpoints
     var queryItems: [String:String]?
     let httpMethod: HttpMethod = .GET
-    var baseUrl: URLBase = .example
+    var baseUrl: URLBase = .restaurant_URL
     
     func getURL() -> String {
         return baseUrl.rawValue + endpoint.rawValue
@@ -23,11 +23,11 @@ struct RequestModel {
     }
 
     enum Endpoints: String {
-        case example = "/TFTest/test.json"
+        case test = "/TFTest/test.json"
     }
 
     enum URLBase: String {
-        case example = "https://alanflament.github.io"
+        case restaurant_URL = "https://alanflament.github.io"
     }
 }
 

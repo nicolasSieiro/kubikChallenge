@@ -19,6 +19,8 @@
 		4F9A38D02990BD3300735159 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38CF2990BD3300735159 /* Service.swift */; };
 		4F9A38D22990BD4900735159 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D12990BD4900735159 /* NetworkError.swift */; };
 		4F9A38D42990BD6A00735159 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D32990BD6A00735159 /* RequestModel.swift */; };
+		4F9A38D72990BF2300735159 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D62990BF2300735159 /* HomeProvider.swift */; };
+		4F9A38D92990BF3100735159 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D82990BF3100735159 /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4F9A38CF2990BD3300735159 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4F9A38D12990BD4900735159 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4F9A38D32990BD6A00735159 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		4F9A38D62990BF2300735159 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		4F9A38D82990BF3100735159 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 		4F9A38C52990BBF300735159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F9A38D52990BF1A00735159 /* Provider */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		4F9A38C72990BBFD00735159 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				4F9A38D82990BF3100735159 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -174,6 +180,14 @@
 				4F9A38CD2990BD1400735159 /* RestaurantList.json */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4F9A38D52990BF1A00735159 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A38D62990BF2300735159 /* HomeProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +294,8 @@
 				4F9A38C92990BC1300735159 /* HomeViewController.swift in Sources */,
 				4F9A38D22990BD4900735159 /* NetworkError.swift in Sources */,
 				4F9A38992990BACB00735159 /* KubikChallenge.xcdatamodeld in Sources */,
+				4F9A38D92990BF3100735159 /* HomePresenter.swift in Sources */,
+				4F9A38D72990BF2300735159 /* HomeProvider.swift in Sources */,
 				4F9A388F2990BACB00735159 /* AppDelegate.swift in Sources */,
 				4F9A38C42990BBBE00735159 /* RestaurantModel.swift in Sources */,
 				4F9A38912990BACB00735159 /* SceneDelegate.swift in Sources */,
