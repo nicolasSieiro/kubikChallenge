@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0D67F12CB963AD1ECA8FE4 /* Pods_KubikChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6872505A6A7CA6A1F49090F5 /* Pods_KubikChallengeTests.framework */; };
 		4F9A388F2990BACB00735159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A388E2990BACB00735159 /* AppDelegate.swift */; };
 		4F9A38912990BACB00735159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38902990BACB00735159 /* SceneDelegate.swift */; };
 		4F9A38992990BACB00735159 /* KubikChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38972990BACB00735159 /* KubikChallenge.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 		4F9A38D72990BF2300735159 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D62990BF2300735159 /* HomeProvider.swift */; };
 		4F9A38D92990BF3100735159 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38D82990BF3100735159 /* HomePresenter.swift */; };
 		4F9A38DC2990C48000735159 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38DB2990C48000735159 /* RestaurantCell.swift */; };
+		5855EC3DEF2BBA8468758482 /* Pods_KubikChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5462C31C5DED2A915381553 /* Pods_KubikChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24158B85631F07B62C02BF51 /* Pods-KubikChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubikChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KubikChallengeTests/Pods-KubikChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		4F9A388B2990BACB00735159 /* KubikChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KubikChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9A388E2990BACB00735159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9A38902990BACB00735159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		4F9A38D62990BF2300735159 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
 		4F9A38D82990BF3100735159 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		4F9A38DB2990C48000735159 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		66E4ADDD0DCB50156C912B1B /* Pods-KubikChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubikChallenge.debug.xcconfig"; path = "Target Support Files/Pods-KubikChallenge/Pods-KubikChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		6760748C13CF71C9EB8D2228 /* Pods-KubikChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubikChallenge.release.xcconfig"; path = "Target Support Files/Pods-KubikChallenge/Pods-KubikChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		6872505A6A7CA6A1F49090F5 /* Pods_KubikChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KubikChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF18882D26DB465E63134AB /* Pods-KubikChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubikChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KubikChallengeTests/Pods-KubikChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5462C31C5DED2A915381553 /* Pods_KubikChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KubikChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5855EC3DEF2BBA8468758482 /* Pods_KubikChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,18 +76,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0D67F12CB963AD1ECA8FE4 /* Pods_KubikChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33508AC6D219672BBEEF3D60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5462C31C5DED2A915381553 /* Pods_KubikChallenge.framework */,
+				6872505A6A7CA6A1F49090F5 /* Pods_KubikChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F9A38822990BACB00735159 = {
 			isa = PBXGroup;
 			children = (
 				4F9A388D2990BACB00735159 /* KubikChallenge */,
 				4F9A38A72990BACC00735159 /* KubikChallengeTests */,
 				4F9A388C2990BACB00735159 /* Products */,
+				E744F992B4E8DC8458031AE2 /* Pods */,
+				33508AC6D219672BBEEF3D60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +222,18 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
+		E744F992B4E8DC8458031AE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66E4ADDD0DCB50156C912B1B /* Pods-KubikChallenge.debug.xcconfig */,
+				6760748C13CF71C9EB8D2228 /* Pods-KubikChallenge.release.xcconfig */,
+				BDF18882D26DB465E63134AB /* Pods-KubikChallengeTests.debug.xcconfig */,
+				24158B85631F07B62C02BF51 /* Pods-KubikChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F9A38B82990BACC00735159 /* Build configuration list for PBXNativeTarget "KubikChallenge" */;
 			buildPhases = (
+				E9C43807904206A96D5B2E22 /* [CP] Check Pods Manifest.lock */,
 				4F9A38872990BACB00735159 /* Sources */,
 				4F9A38882990BACB00735159 /* Frameworks */,
 				4F9A38892990BACB00735159 /* Resources */,
+				E95EA851F68040C94DB30766 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F9A38BB2990BACC00735159 /* Build configuration list for PBXNativeTarget "KubikChallengeTests" */;
 			buildPhases = (
+				08A571814744E3A9C2AE1969 /* [CP] Check Pods Manifest.lock */,
 				4F9A38A02990BACC00735159 /* Sources */,
 				4F9A38A12990BACC00735159 /* Frameworks */,
 				4F9A38A22990BACC00735159 /* Resources */,
@@ -296,6 +332,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08A571814744E3A9C2AE1969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KubikChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95EA851F68040C94DB30766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KubikChallenge/Pods-KubikChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KubikChallenge/Pods-KubikChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KubikChallenge/Pods-KubikChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C43807904206A96D5B2E22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KubikChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F9A38872990BACB00735159 /* Sources */ = {
@@ -462,6 +562,7 @@
 		};
 		4F9A38B92990BACC00735159 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E4ADDD0DCB50156C912B1B /* Pods-KubikChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +591,7 @@
 		};
 		4F9A38BA2990BACC00735159 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6760748C13CF71C9EB8D2228 /* Pods-KubikChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -518,6 +620,7 @@
 		};
 		4F9A38BC2990BACC00735159 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF18882D26DB465E63134AB /* Pods-KubikChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +640,7 @@
 		};
 		4F9A38BD2990BACC00735159 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24158B85631F07B62C02BF51 /* Pods-KubikChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

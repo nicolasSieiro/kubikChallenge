@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         
         tableView.register(RestaurantCell.self, forCellReuseIdentifier: "RestaurantCell")
         
-        tableView.rowHeight = 100
+        tableView.rowHeight = 120
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
