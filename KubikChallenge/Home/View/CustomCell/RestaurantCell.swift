@@ -21,16 +21,17 @@ class RestaurantCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        contentView.isUserInteractionEnabled = true
         configureImageView()
         configureLabels()
         configureFavoriteButton()
+        
     }
     
     func configureImageView() {
         addSubview(restImageView)
         restImageView.layer.cornerRadius = 10
         restImageView.clipsToBounds = true
-        
         
         restImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -89,7 +90,15 @@ class RestaurantCell: UITableViewCell {
     }
     
     @objc func onTap(sender: UIButton!) {
+        let isFavorite = manager.isFavorite(restaurantUUID: restaurantUUID)
         
+        if isFavorite == true {
+            favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
+            manager.removeFavorite(restaurantUUID: restaurantUUID)
+        } else {
+            favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            manager.saveFavorite(restaurantUUID: restaurantUUID)
+        }
     }
     
     func set(restaurant: Item) {
@@ -117,14 +126,12 @@ class RestaurantCell: UITableViewCell {
     }
     
     func checkFavorite(with uuid: String) {
-        let isFavorite = manager.isFavorite(restaurantUUID: restaurantUUID)
-        
+        let isFavorite = manager.isFavorite(restaurantUUID: uuid)
+                
         if isFavorite == true {
-            favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
-            //remove favorite
-        } else {
             favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-            manager.saveFavorite(restaurantUUID: restaurantUUID)
+        } else if isFavorite == false {
+            favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
         }
     }
     

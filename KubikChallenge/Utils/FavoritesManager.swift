@@ -45,4 +45,34 @@ struct FavoritesManager {
             print(error.localizedDescription)
         }
     }
+    
+    func removeFavorite(restaurantUUID: String) {
+        guard let fav = fetchFavorite(withUUID: restaurantUUID) else {
+            return
+        }
+        
+        mainContext.delete(fav)
+        
+        do {
+            try mainContext.save()
+        } catch let error {
+            print("Failed to delete: \(error)")
+        }
+        
+    }
+    
+    func fetchFavorite(withUUID uuid: String) -> Favorite? {
+        let request = NSFetchRequest<Favorite>(entityName: "Favorite")
+        request.fetchLimit = 1
+        request.predicate = NSPredicate(format: "restaurantUUID == %@", uuid)
+        
+        do {
+            let favs = try mainContext.fetch(request)
+            return favs.first
+        } catch let error {
+            print("Failed to fetch: \(error)")
+        }
+        
+        return nil
+    }
 }
