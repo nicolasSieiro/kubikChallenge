@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F0D67F12CB963AD1ECA8FE4 /* Pods_KubikChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6872505A6A7CA6A1F49090F5 /* Pods_KubikChallengeTests.framework */; };
+		4F6157172990D02B00C854D2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6157162990D02B00C854D2 /* CoreDataStack.swift */; };
+		4F6157192990D08200C854D2 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6157182990D08200C854D2 /* FavoritesManager.swift */; };
 		4F9A388F2990BACB00735159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A388E2990BACB00735159 /* AppDelegate.swift */; };
 		4F9A38912990BACB00735159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38902990BACB00735159 /* SceneDelegate.swift */; };
 		4F9A38992990BACB00735159 /* KubikChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38972990BACB00735159 /* KubikChallenge.xcdatamodeld */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		24158B85631F07B62C02BF51 /* Pods-KubikChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubikChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KubikChallengeTests/Pods-KubikChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F6157162990D02B00C854D2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4F6157182990D08200C854D2 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		4F9A388B2990BACB00735159 /* KubikChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KubikChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9A388E2990BACB00735159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9A38902990BACB00735159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				4F9A38CC2990BCF900735159 /* Mocks */,
+				4F6157162990D02B00C854D2 /* CoreDataStack.swift */,
+				4F6157182990D08200C854D2 /* FavoritesManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -230,7 +236,6 @@
 				BDF18882D26DB465E63134AB /* Pods-KubikChallengeTests.debug.xcconfig */,
 				24158B85631F07B62C02BF51 /* Pods-KubikChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -405,6 +410,7 @@
 				4F9A38C92990BC1300735159 /* HomeViewController.swift in Sources */,
 				4F9A38D22990BD4900735159 /* NetworkError.swift in Sources */,
 				4F9A38992990BACB00735159 /* KubikChallenge.xcdatamodeld in Sources */,
+				4F6157172990D02B00C854D2 /* CoreDataStack.swift in Sources */,
 				4F9A38D92990BF3100735159 /* HomePresenter.swift in Sources */,
 				4F9A38D72990BF2300735159 /* HomeProvider.swift in Sources */,
 				4F9A388F2990BACB00735159 /* AppDelegate.swift in Sources */,
@@ -412,6 +418,7 @@
 				4F9A38912990BACB00735159 /* SceneDelegate.swift in Sources */,
 				4F9A38DC2990C48000735159 /* RestaurantCell.swift in Sources */,
 				4F9A38D02990BD3300735159 /* Service.swift in Sources */,
+				4F6157192990D08200C854D2 /* FavoritesManager.swift in Sources */,
 				4F9A38D42990BD6A00735159 /* RequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

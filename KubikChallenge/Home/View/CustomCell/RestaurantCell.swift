@@ -16,6 +16,8 @@ class RestaurantCell: UITableViewCell {
     var restImageView = UIImageView()
     var favoriteButton = UIButton()
     var imagePlaceholder = UIImage(systemName: "questionmark.circle")
+    private var restaurantUUID = ""
+    let manager = FavoritesManager()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -109,6 +111,21 @@ class RestaurantCell: UITableViewCell {
         let formatedAddress = "\(restaurant.address.street), \(restaurant.address.country), \(restaurant.address.locality)"
         restAddressLabel.text = formatedAddress
         
+        //Favorite
+        checkFavorite(with: restaurant.uuid)
+        restaurantUUID = restaurant.uuid
+    }
+    
+    func checkFavorite(with uuid: String) {
+        let isFavorite = manager.isFavorite(restaurantUUID: restaurantUUID)
+        
+        if isFavorite == true {
+            favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
+            //remove favorite
+        } else {
+            favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            manager.saveFavorite(restaurantUUID: restaurantUUID)
+        }
     }
     
     required init?(coder: NSCoder) {

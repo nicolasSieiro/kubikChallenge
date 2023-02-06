@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 class HomeViewController: UIViewController {
     
     lazy var presenter = HomePresenter(delegate: self)
@@ -17,7 +18,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         tableViewConfig()
-        
         Task {
             await presenter.getRestaurants()
         }
@@ -52,7 +52,15 @@ extension HomeViewController: HomeViewProtocol {
     }
     
     func showError(_ error: String) {
-        
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { action in
+            if action.style == .cancel {
+                print("ok button pressed")
+            }
+        }))
+
+        present(alert, animated: true)
     }
 }
 
