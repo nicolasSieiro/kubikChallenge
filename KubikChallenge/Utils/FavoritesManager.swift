@@ -75,4 +75,18 @@ struct FavoritesManager {
         
         return nil
     }
+    
+    func getAllFavorites() -> [Favorite] {
+        let request: NSFetchRequest<Favorite> = NSFetchRequest(entityName: "Favorite")
+        var favorites: [Favorite] = []
+        
+        do {
+            let favs = try mainContext.fetch(request)
+            favorites = favs
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        return favorites
+    }
 }

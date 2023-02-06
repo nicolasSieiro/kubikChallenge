@@ -25,7 +25,6 @@ class RestaurantCell: UITableViewCell {
         configureImageView()
         configureLabels()
         configureFavoriteButton()
-        
     }
     
     func configureImageView() {
